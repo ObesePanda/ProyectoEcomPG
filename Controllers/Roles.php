@@ -12,7 +12,7 @@ class Roles extends Controllers
 		$data['page_id'] = 3;
 		$data['page_tag'] = "Roles Usuario";
 		$data['page_title'] = "<b>Roles Usuario</b>";
-		$data['page_name'] = "Roles Usuario";
+		$data['page_name'] = "roles";
 		$this->views->getView($this, "roles", $data);
 	}
 
@@ -35,6 +35,20 @@ class Roles extends Controllers
 				</div>';
 		}
 		echo json_encode($arrData, JSON_UNESCAPED_UNICODE);
+		die();
+	}
+	public function getSelectRoles()
+	{
+		$htmlOptions = "";
+		$arrData = $this->model->selectRoles();
+		if (count($arrData) > 0) {
+			for ($i = 0; $i < count($arrData); $i++) {
+				if ($arrData[$i]['status'] == 1) {
+					$htmlOptions .= '<option value="' . $arrData[$i]['idrol'] . '">' . $arrData[$i]['nombrerol'] . '</option>';
+				}
+			}
+		}
+		echo $htmlOptions;
 		die();
 	}
 
