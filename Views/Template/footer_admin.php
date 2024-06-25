@@ -11,8 +11,9 @@
     <!-- The javascript plugin to display page loading on top-->
     <script src="<?= media(); ?>/js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
-    
+
     <script type="text/javascript" src="<?= media(); ?>/js/plugins/sweetalert.min.js"></script>
+ 
 
 
     <!-- Data table plugin-->

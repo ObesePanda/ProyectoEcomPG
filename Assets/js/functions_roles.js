@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function(){
         var intStatus = document.querySelector('#listStatus').value;        
         if(strNombre == '' || strDescripcion == '' || intStatus == '')
         {
-            Swal.fire({
+            swal({
                 title: 'Error!',
                 text: 'Todos los campos son obligatorios',
-                icon: 'error',
+                type: "error",
                 confirmButtonText: 'Aceptar'
               })
             return false;
@@ -148,12 +148,12 @@ function fntDelRol(){
         btnDelRol.addEventListener('click', function(){
             var idrol = this.getAttribute("rl");
             swal({
-                title: "Eliminar Rol",
-                text: "¿Realmente quiere eliminar el Rol?",
+                title: "Eliminar",
+                text: "¿Quieres eliminar el rol?",
                 type: "warning",
-                showCancelButton: true,
-                confirmButtonText: "Si, eliminar!",
-                cancelButtonText: "No, cancelar!",
+                showCancelButton: true, 
+                cancelButtonText: "Cancelar",
+                confirmButtonText: "Eliminar",
                 closeOnConfirm: false,
                 closeOnCancel: true
             }, function(isConfirm) {
