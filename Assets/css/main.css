@@ -2620,8 +2620,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #FFF;
-  background-color: #2da0e8;
-  border-color: #2da0e8;
+  background-color: #098dab;
+  border-color: #098dab;
 }
 
 .btn-primary:hover {
@@ -14867,7 +14867,7 @@ be a descendant of the grid when it is being dragged.
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   padding: 30px;
-  background-color: #E5E5E5;
+  background-color: #ebedee;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
@@ -14923,7 +14923,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #55b5f0;
+  background-color: #0db3d9;
   z-index: 1030;
   padding-right: 15px;
 }
@@ -14960,7 +14960,7 @@ be a descendant of the grid when it is being dragged.
             flex: 0 0 auto;
     display: block;
     width: 230px;
-    background-color: #2da0e8;
+    background-color: #303c54;
   }
 }
 
@@ -14994,7 +14994,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
   color: #fff;
-  background-color: #00635a;
+  background-color: #0282ad;
   text-decoration: none;
 }
 
@@ -15161,7 +15161,7 @@ be a descendant of the grid when it is being dragged.
   width: 230px;
   overflow: auto;
   z-index: 10;
-  background-color: #222d32;
+  background-color: #3d4b64;
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
   -webkit-transition: left 0.3s ease,
@@ -15245,7 +15245,7 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 15px;
-  font-weight: bold;
+  font-weight:300;
   font-size: 1.08em;
   border-left: 3px solid transparent;
   -webkit-transition: border-left-color 0.3s ease,
@@ -15259,7 +15259,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
   background: #0d1214;
-  border-left-color: #009688;
+  border-left-color: #3295a8;
   text-decoration: none;
   color: #fff;
 }
@@ -15279,7 +15279,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .treeview.is-expanded [data-toggle='treeview'] {
-  border-left-color: #009688;
+  border-left-color: #3295a8;
   background: #0d1214;
 }
 
@@ -15299,7 +15299,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: max-height 0.3s ease;
   -o-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
-  background: #2a383e;
+  background: #182024;
 }
 
 .treeview-item {
