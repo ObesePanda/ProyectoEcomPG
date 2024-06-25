@@ -1,7 +1,7 @@
 <?php
 
 
-const BASE_URL = "http://localhost/ProyectoEcoPG";
+const BASE_URL = "http://localhost/ProyectoEcomPG";
 
 //Zona horaria
 date_default_timezone_set('America/Mexico_City');
