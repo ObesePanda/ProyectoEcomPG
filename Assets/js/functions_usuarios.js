@@ -16,15 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
             swal("Atención", "Todos los campos son obligatorios." , "error");
             return false;
         }
-
-        let elementsValid = document.getElementsByClassName("valid");
-        for (let i = 0; i < elementsValid.length; i++) { 
-            if(elementsValid[i].classList.contains('is-invalid')) { 
-                swal("Atención", "Por favor verifique los campos en rojo." , "error");
-                return false;
-            } 
-        } 
-
         var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
         var ajaxUrl = base_url+'/Usuarios/setUsuario'; 
         var formData = new FormData(formUsuario);
@@ -38,16 +29,12 @@ document.addEventListener('DOMContentLoaded', function(){
                     $('#modalFormUsuario').modal("hide");
                     formUsuario.reset();
                     swal("Usuarios", objData.msg ,"success");
-                    tableUsuarios.api().ajax.reload();
                 }else{
                     swal("Error", objData.msg , "error");
                 }
             }
         }
-
-    }
-
-}, false);
+    }},false);
 
 window.addEventListener('load', function() {
     fntRolesUsuario();

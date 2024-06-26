@@ -29,12 +29,14 @@ class UsuariosModel extends Mysql
         $this->intTipoId = $tipoid;
         $this->intStatus = $status;
         $return = 0;
+
         $sql = "SELECT * FROM persona WHERE 
-					email_user = '{$this->strEmail}' or identificacion = '{$this->strIdentificacion}' ";
+                email_user = '{$this->strEmail}' or identificacion = '{$this->strIdentificacion}' ";
         $request = $this->select_all($sql);
+
         if (empty($request)) {
             $query_insert  = "INSERT INTO persona(identificacion,nombres,apellidos,telefono,email_user,password,rolid,status) 
-								  VALUES(?,?,?,?,?,?,?,?)";
+                              VALUES(?,?,?,?,?,?,?,?)";
             $arrData = array(
                 $this->strIdentificacion,
                 $this->strNombre,
