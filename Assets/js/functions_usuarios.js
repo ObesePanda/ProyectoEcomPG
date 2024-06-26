@@ -1,3 +1,4 @@
+var tableUsuarios;
 document.addEventListener('DOMContentLoaded', function(){
 
     var formUsuario = document.querySelector("#formUsuario");
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     $('#modalFormUsuario').modal("hide");
                     formUsuario.reset();
                     swal("Usuarios", objData.msg ,"success");
+                    tableUsuarios.ap().ajax.reload(function(){});
                 }
                 else{
                     swal("Error", objData.msg , "error");

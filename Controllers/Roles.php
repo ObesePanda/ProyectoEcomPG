@@ -91,6 +91,7 @@ class Roles extends Controllers
 			} else {
 				$arrResponse = array('status' => true, 'msg' => 'Datos Actualizados correctamente.');
 			}
+			$existe=false;
 		} else if ($request_rol == 'exist') {
 
 			$arrResponse = array('status' => false, 'msg' => '¡Atención! El Rol ya existe.');

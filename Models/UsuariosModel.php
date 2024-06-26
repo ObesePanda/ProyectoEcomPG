@@ -33,7 +33,8 @@ class UsuariosModel extends Mysql
         $sql = "SELECT * FROM persona WHERE email_user = '{$this->strEmail}' or identificacion = '{$this->strIdentificacion}' ";
         $request = $this->select_all($sql);
 
-        if (empty($request)) {
+        if (empty($request))
+         {
             $query_insert  = "INSERT INTO persona(identificacion,nombres,apellidos,telefono,email_user,password,rolid,status) 
                               VALUES(?,?,?,?,?,?,?,?)";
             $arrData = array(

@@ -20,7 +20,7 @@
 
 <body class="app sidebar-mini">
   <!-- Navbar-->
-  <header class="app-header"><a class="app-header__logo bi bi-globe-americas fs-4" href="<?= base_url(); ?>/dashboard">PG</a>
+  <header class="app-header"><a class="app-header__logo bi bi-globe-americas fs-4" href="<?= base_url(); ?>/dashboard"> PGarcia</a>
     <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><i class="fas fa-bars"></i></a>
     <!-- Navbar Right Menu-->
     <ul class="app-nav">
