@@ -41,7 +41,7 @@ class Usuarios extends Controllers
                     $intTipoId,
                     $intStatus
                 );
-
+                
                 if ($request_user > 0) {
                     $arrResponse = array('status' => true, 'msg' => 'Datos guardados correctamente.');
                 } else if ($request_user == 'exist') {
@@ -55,3 +55,4 @@ class Usuarios extends Controllers
         die();
     }
 }
+//DUDA PHP VERSION. EN VALIDACIONES 
