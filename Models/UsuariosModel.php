@@ -30,8 +30,7 @@ class UsuariosModel extends Mysql
         $this->intStatus = $status;
         $return = 0;
 
-        $sql = "SELECT * FROM persona WHERE 
-                email_user = '{$this->strEmail}' or identificacion = '{$this->strIdentificacion}' ";
+        $sql = "SELECT * FROM persona WHERE email_user = '{$this->strEmail}' or identificacion = '{$this->strIdentificacion}' ";
         $request = $this->select_all($sql);
 
         if (empty($request)) {

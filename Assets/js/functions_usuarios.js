@@ -29,20 +29,21 @@ document.addEventListener('DOMContentLoaded', function(){
                     $('#modalFormUsuario').modal("hide");
                     formUsuario.reset();
                     swal("Usuarios", objData.msg ,"success");
-                }else{
+                }
+                else{
                     swal("Error", objData.msg , "error");
                 }
             }
         }
     }},false);
 
-window.addEventListener('load', function() {
+    window.addEventListener('load', function() {
     fntRolesUsuario();
     /*fntViewUsuario();
     fntEditUsuario();
     fntDelUsuario();*/
-}, false);
-function fntRolesUsuario(){
+    }, false);
+    function fntRolesUsuario(){
     var ajaxUrl = base_url+'/Roles/getSelectRoles';
     var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     request.open("GET",ajaxUrl,true);
@@ -56,11 +57,11 @@ function fntRolesUsuario(){
         }
     }
     
-}
+    }
 
 
-function openModal()
-{
+    function openModal()
+    {
     document.querySelector('#idUsuario').value ="";
     document.querySelector('.modal-header').classList.replace("headerUpdate", "headerRegister");
     document.querySelector('#btnActionForm').classList.replace("btn-info", "btn-primary");
@@ -68,4 +69,4 @@ function openModal()
     document.querySelector('#titleModal').innerHTML = "Nuevo Usuario";
     document.querySelector("#formUsuario").reset();
     $('#modalFormUsuario').modal('show');
-}
+    }

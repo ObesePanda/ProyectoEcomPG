@@ -43,7 +43,7 @@ class Usuarios extends Controllers
                     $intStatus
                 );
 
-                if ($request_user > 0) {
+                if ($request_user) {
                     $arrResponse = array('status' => true, 'msg' => 'Datos guardados correctamente.');
                 } else if ($request_user == 'exist') {
                     $arrResponse = array('status' => false, 'msg' => '¡Atención! el email o la identificación ya existe, ingrese otro.');
